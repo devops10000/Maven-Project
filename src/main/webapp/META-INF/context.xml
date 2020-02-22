@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/MavenProj" docBase="./MavenProj" debug="1" reloadable="false">
+
+    <Environment name="logActiveFileOutput" value="true" type="java.lang.String" override="false" />
+    <Environment name="logName" value="D:\\Git_Practice\\Maven-Project\\MavenProj\\target\\MavenProj.log" type="java.lang.String" override="false" />
+    <Environment name="logFileRotatePattern" value="D:\\Git_Practice\\Maven-Project\\MavenProj\\target\\MavenProj_logs\\MavenProj-%i.log.gz" type="java.lang.String" override="false" />
+    <Environment name="logLevel" value="INFO" type="java.lang.String" override="false" />
+    <Environment name="logFileSize" value="10485760" type="java.lang.String" override="false" />
+    <Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
+
+    <Environment name="configVersion" value="production" type="java.lang.String" override="false" />
+
+    <Environment name="applicationBaseURL" value="https://localhost:8080/MavenProj/" type="java.lang.String" override="false" />
+    <Environment name="resourceRootURL" value="/MavenProj/resources/" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceRootURL" value="/MavenProj/protected/" type="java.lang.String" override="false" />
+
+    <Environment name="resourceDiskRootFolder" value="D:\\Git_Practice\\Maven-Project\\MavenProj\\src\\main\\webapp\\resources" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceDiskRootFolder" value="D:\\Git_Practice\\Maven-Project\\MavenProj\\src\\main\\webapp\\protected" type="java.lang.String" override="false" />
+
+    <Environment name="indexDiskRootFolder" value="D:\\Git_Practice\\Maven-Project\\MavenProj\\target\\temp\\indexdir" type="java.lang.String" override="false" />
+    
+    <Environment name="portDataSourceClassName" value="org.apache.derby.jdbc.EmbeddedDriver" type="java.lang.String" override="false" />
+    <Environment name="servDataSourceClassName" value="org.apache.derby.jdbc.EmbeddedDriver" type="java.lang.String" override="false" />
+	
+    <Resource name="jdbc/portDataSource" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              maxActive="8" maxIdle="4"
+              username="agile" password="agile"
+              url="jdbc:derby:D:\\Git_Practice\\Maven-Project\\MavenProj\\target/derby/production/MavenProjPort;create=true" />
+
+    <Resource name="jdbc/servDataSource" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              maxActive="8" maxIdle="4"
+              username="agile" password="agile"
+              url="jdbc:derby:D:\\Git_Practice\\Maven-Project\\MavenProj\\target/derby/production/MavenProjServ;create=true" />
+
+</Context>
